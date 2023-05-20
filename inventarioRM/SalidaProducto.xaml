@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="inventarioRM.SalidaProducto">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0"  Padding="20,50,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"  Text="Salida Producto" FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+                <BoxView Grid.Row="1"></BoxView>
+                <Label Grid.Row="2"  ></Label>
+                <BoxView Grid.Row="3"></BoxView>
+                <Label Grid.Row="4"  Text=" Codigo de Barra" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry Grid.Row="5"  Placeholder="Barcode" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="6"></BoxView>
+                <Label Grid.Row="7"  Text=" Cantidadad" TextColor="#1C375C"  HorizontalOptions="StartAndExpand"></Label>
+                <Entry Grid.Row="8"  Placeholder="Amount" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                <BoxView Grid.Row="9"></BoxView>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btbEgreso" Text="Egreso" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Margin="35,0,35,0" Clicked="btbEgreso_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btbCancelar" Text="Cancelar" TextColor="White" BackgroundColor="DarkRed" CornerRadius="20" Margin="35,0,35,0" Clicked="btbCancelar_Clicked" Grid.Row="0" Grid.Column="1"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
